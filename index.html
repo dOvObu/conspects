@@ -1,92 +1,46 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+<title>Конспекты</title>
 <meta charset="utf-8">
 
 <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script>
-<style>
-	.nav-link { text-decoration:none; color:#050505; display: block; padding: .5rem 1rem; }
-	.nav-link:hover { text-decoration:none; color:#C50505; display: block; padding: .5rem 1rem; }
-	.nav-link.active { text-decoration:none; color:#050505; display: block; padding: .5rem 1rem; font-weight: bold; }
-	.nav-link.active:hover { text-decoration:none; color:#C50505; display: block; padding: .5rem 1rem; font-weight: bold; }
-	p { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" }
-	.nav-btns { font-size:0.9rem; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" }
-</style>
-
+<link rel="stylesheet" href="style.css">
+<script>
+/*
+	var node = document.getElementById("main-nav-bar");
+	var parts = document.href.split('/');
+	delete parts[parts.length - 1];
+	var url = parts.join('/');
+*/
+</script>
 </head>
-<body>
+<body><div style="position: fixed; top: 0px; left: 0px; bottom: 0px; width: 16rem; padding: 2rem 1rem; background-color: rgb(248,249,250); overflow-y: scroll; scrollbar-width: thin;"><h3 style='line-height: 1.2;font-weight:normal;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";'>Конспекты</h3><hr><ul class="nav-btns" id="main-nav-bar"><div w3-include-navbar="main_nav_bar.txt"></div></ul></div><div id="page-content" style="margin-left: 18rem; padding: .5rem 1rem;"><script src="include_html.js"></script>
 
-<div style="position: fixed; top: 0px; left: 0px; bottom: 0px; width: 16rem; padding: 2rem 1rem; background-color: rgb(248,249,250); overflow-y: scroll; scrollbar-width: thin;">
-<h3 style='line-height: 1.2;font-weight:normal;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";'>
-Конспекты
-</h3>
-<hr>
-	<ul class="nav-btns">
-	<li><a href="#" class="nav-link active"> Предмет 1 </a></li>
-	<li><a href="#" class="nav-link"> Предмет 2 </a></li>
-	<li><a href="#" class="nav-link"> Предмет 3 </a></li>
-	</ul>
-</div>
-<div id="page-content" style="margin-left: 18rem; padding: .5rem 1rem;">
+
 <p> <!-- Содержимое страницы -->
 
 
-<zero-md>
-<script type="text/markdown">
-# Пример страницы с конспектом
-Просто текст
+<zero-md><script type="text/markdown">
 
-```cpp
-int main () {
-	std::cout << "oh, hi!" << std::endl;
-	return 0;
-}
-```
-1. раз
-1. два
-1. три
-- пых
-- пых
-- пых
+	![intro](https://static.dezeen.com/uploads/2018/10/amee-allsop-furniture-design-shelving-tables_dezeen_hero-852x479.jpg)
 
-> ...
-</script>
-</zero-md><br>
+</script></zero-md><br>
 
-Тест `a + a * s = 15`
+	`(a+b)^n = sum_(i=0)^n((n),(k))a^(n-k)b^k`<br><br>
+	`((a),(b))=(n!)/(k!(n-k)!)`<br><br>
+	<p style="font-size: xx-small">Ничего не понятно,<br>
+		но очень интересно</p>
 
 
 
-</p>
-</div>
-<!-- Sidebar
-<div id="wrapper">
-<div id="sidebar-wrapper">
-<ul class="sidebar-nav">
-
-<li> <a href="index.html"> Машин лёрнинг </a> </li>
-
-<li> <a href="#"> Раз </a> </li>
-<li> <a href="#"> Два </a> </li>
-<li> <a href="#"> Три </a> </li>
-
-</ul>
-</div>
-</div>
--->
-
-<div id="page-content-wrapper">
-<div class="container-fluid">
-<div class="row">
-<div class="col-lg-12">
-</div>
-</div>
-</div>
-</div>
 
 
+</p></div><div id="page-content-wrapper"><div class="container-fluid"><div class="row"><div class="col-lg-12"></div></div></div></div>
 
+
+<script>includeHTML()</script>>
 </body>
 </html>

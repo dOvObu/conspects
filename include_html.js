@@ -1,3 +1,21 @@
+
+function MakeNavBarBold() {
+    var main_nav = document.getElementById("main-nav-bar").childNodes;
+    var hr_list = window.location.toString().split("/");
+    var hr = hr_list[hr_list.length - 1];
+
+    for (var i = 0; main_nav.length > i; i++) {
+
+        var li = main_nav[i];
+        if (li.nodeName != 'LI') continue;
+
+        var a = li.childNodes[0];
+        if (a.getAttribute("href") == hr) {
+            a.setAttribute("class", "nav-link active");
+        }
+    }
+}
+
 function includeHTML() {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
@@ -15,6 +33,7 @@ function includeHTML() {
                     if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
                     /* Remove the attribute, and call this function once more: */
                     elmnt.removeAttribute("w3-include-html");
+                    MakeNavBarBold();
                     return ;
                 }
             }

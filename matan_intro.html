@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=AM_CHTML"></script><link rel="stylesheet" href="style.css">
+
+	<title>Введение в мат. анализ</title>
+
+</head><body><div style="position: fixed; top: 0px; left: 0px; bottom: 0px; width: 16rem; padding: 2rem 1rem; background-color: rgb(248,249,250); overflow-y: scroll; scrollbar-width: thin;"><h3 style='line-height: 1.2;font-weight:normal;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";'>Конспекты</h3><hr><ul class="nav-btns"><div w3-include-navbar="main_nav_bar.txt" id="main-nav-bar"></div></ul></div><div id="page-content" style="margin-left: 18rem; padding: .5rem 1rem;"><script src="include_html.js"></script>
+
+
+<p> <!-- Содержимое страницы -->
+<zero-md><script type="text/markdown">
+	# Действительные числа
+	#### Определение действительного числа
+	## Сечение в Q
+</script></zero-md><br>
+	это <i>разбиение</i> `QQ` на два непустых множества `A и A' : (A cap A' = O/), (A cup A' = QQ)`
+	и что самое главное `forall x in A, forall x' in A': x < x'`.<br><br>
+<zero-md><script type="text/markdown">
+	> Где классы A -- нижний A' -- верхний<br><br>
+</script></zero-md>
+	<br>
+	<code>#define</code> `A|A'` :: разбиение `alpha`
+	<br><br>
+	<b>Примеры:</b><br><ol>
+	<li>`A = {x in Q : x <= 1}, A'={x in Q : x > 1}` :: в `A` есть верхний элемент, а в `A'` нет нижнего </li>
+	<li>`A = {x in Q : x < 1}, A'={x in Q : x >= 1}` :: в `A` нет верхнего, в `A'` есть нижний </li>
+	<li>`A = {x in Q : x < 0} cup {x in Q : 0 < x, x^2 < 2}, A'={x in Q : x > 0, x^2 > 2}` :: нет, нет | т.к. корень из двух -- число не рациональное</li>
+	</ol>
+	<blockquote style="color:#6a737d"><p>
+	Другого варианта <b>НЕТ</b><br> границы `r_1=max A, r_2=min A'` не подходят, т.к. не равны `r_1 < r_2`,<br>
+	между ними `r_0 in (r_1, r_2)` не подходят, т.к. не входят в куски разбиений `r_0 notin A и r_0 notin A'`
+	</p></blockquote><br>
+<zero-md><script type="text/markdown">
+	![три варианта сечения](./img/mtn_intro_1.png)<br>
+	Сопоставляем числа всем трём сечениям<br>и больше не рассматриваем первый тип сечения.
+	
+	## Действительные числа
+	
+	Сечения 2-го и 3-го типов.
+</script></zero-md>
+
+
+</p></div><div id="page-content-wrapper"><div class="container-fluid"><div class="row"><div class="col-lg-12"></div></div></div></div></body><footer><script>includeHTML();</script></footer></html>

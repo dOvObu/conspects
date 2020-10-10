@@ -8,6 +8,8 @@
 <p> <!-- Содержимое страницы -->
 <zero-md><script type="text/markdown">
 	# Действительные числа
+</script></zero-md><br>
+<zero-md><script type="text/markdown">
 	#### Определение действительного числа
 	## Сечение в Q
 </script></zero-md><br>
@@ -17,16 +19,13 @@
 	> Где классы A -- нижний A' -- верхний<br><br>
 </script></zero-md>
 	<br>
-	<code>#define</code> `A|A'` :: разбиение `alpha`
+	разбиение `alpha` записывается как `A|A'`
 	<br><br>
 	<b>Примеры:</b><br><ol>
 	<li>`A = {x in Q : x <= 1}, A'={x in Q : x > 1}` </li>
 	<li>`A = {x in Q : x < 1}, A'={x in Q : x >= 1}` </li>
 	<li>`A = {x in Q : x < 0} cup {x in Q : 0 < x, x^2 < 2}, A'={x in Q : 0 < x, 2 < x^2}` </li>
-	</ol><p>
-	Другого варианта нет<br> границы `r_1=max A, r_2=min A'` не подходят, т.к. не равны: `r_1 < r_2`,<br>
-	между ними `r_0 in (r_1, r_2)` не подходят, т.к. не входят в куски разбиения `r_0 notin A и r_0 notin A'`
-	</p><br>
+	</ol>
 <zero-md><script type="text/markdown">
 	![три варианта сечения](./img/mtn_intro_1.png)
 	- Сопоставляем всем трём сечениям числа.
@@ -34,7 +33,10 @@
 	- Больше не рассматриваем первый тип сечения.
 	
 	- Сопоставляем числам второго типа множество рациональных чисел.
-	
+</script></zero-md> <p>
+	Другого варианта нет<br> границы `r_1=max A, r_2=min A'` не подходят, т.к. не равны: `r_1 < r_2`,<br>
+	между ними `r_0 in (r_1, r_2)` не подходят, т.к. не входят в куски разбиения `r_0 notin A и r_0 notin A'` </p>
+<zero-md><script type="text/markdown">
 	## Действительные числа
 </script></zero-md><br>
 	`RR` это просто сечения второго и третьего типов.<br><br>
@@ -45,24 +47,29 @@
 	- увидеть, что аксиомы выполняются
 	- увидеть, что это мн-во чисел непрерывно (что в нём нет дырок)
 
-	## Неравенства
+	## Неравенства _сечений_
 </script></zero-md><br>
-	для `alpha in RR` и `beta in RR`, `alpha = A|A'` и `beta = B|B'` равны, если `A=B`, либо, что то же самое, `A'=B'`<br>
+	для `alpha, beta in RR`, сечения `alpha = A|A'` и <text style="color:blue">`beta = B|B'`</text> равны, если `A=B`, либо, что то же самое, `A'=B'`<br>
 	`alpha` больше `beta`, если `A sup B <=> A' sub B'`      (у кого нижний класс меньше, тот раньше начался)<br>
 	`alpha` меньше `beta`, если `A sub B <=> A' sup B'`<br><br>
 
 <zero-md><script type="text/markdown">
+	![варианты неравенства сечений](./img/mtn_intro_2.png)
 	### Утверждение
 </script></zero-md><br>
-	Если `alpha ne beta` то, либо `alpha > beta`, либо `alpha > beta`.<br><br>
+	Если `alpha ne beta` то, либо `alpha < beta`, либо `beta < alpha`.<br><br>
 <zero-md><script type="text/markdown">
 	#### Доказательство
 </script></zero-md>
-	От обратного<br>
-	пусть  неверно, что `alpha > beta`, то значит `EE r_1 in QQ: r_1 in B, r_1 in A'` (то же, что и `r_1 notin A`, но без нового знака)<br>
-	а если неверно, что `alpha < beta`, то значит `EE r_2 in QQ: r_2 in A, r_2 in B'`.<br>
-	Получается, что  `r_1 in B, r_2 in B'`,то есть `r_1 < r_2`,
-	а `r_2 in A, r_1 in A'`, то есть `r_2 < r_1`.<br>Противоречие.<br>
+	От обратного<br><br>
+	пусть  неверно, что `beta < alpha`, то значит `EE r_1 in QQ: r_1 in B, r_1 in A'`<br>
+	а если неверно, что `alpha < beta`, то значит `EE r_2 in QQ: r_2 in A, r_2 in B'`<br>
+	Получается, что  `r_1 in B, r_2 in B'`,то есть `r_1 < r_2`,<br>
+	а `r_2 in A, r_1 in A'`, то есть `r_2 < r_1`.<br><br>Противоречие.<br>
+
+
+<zero-md><script type="text/markdown">
+</script></zero-md>
 
 
 <zero-md><script type="text/markdown">

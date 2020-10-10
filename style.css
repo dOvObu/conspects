@@ -4,5 +4,6 @@
 .nav-link.active { text-decoration:none; color:#050505; display: block; padding: .5rem 1rem; font-weight: bold; }
 .nav-link.active:hover { text-decoration:none; color:#C50505; display: block; padding: .5rem 1rem; font-weight: bold; }
 p { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" }
+a {text-decoration:none;}
 body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" }
 .nav-btns {font-size:0.9rem; font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol" }

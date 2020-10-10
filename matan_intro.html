@@ -38,9 +38,33 @@
 	## Действительные числа
 </script></zero-md><br>
 	`RR` это просто сечения второго и третьего типов.<br><br>
-	Теперь нужно определить интерфейс, в который будут входить алгебраические операции `(+ -)/*` и валидация аксиомами.
+<zero-md><script type="text/markdown">
+	Однако, чтобы это реально были знакомые нам вещественные числа, нужно
+	- определить какое-то неравенство
+	- определить операции + - * /
+	- увидеть, что аксиомы выполняются
+	- увидеть, что это мн-во чисел непрерывно (что в нём нет дырок)
+
+	## Неравенства
+</script></zero-md><br>
+	для `alpha in RR` и `beta in RR`, `alpha = A|A'` и `beta = B|B'` равны, если `A=B`, либо, что то же самое, `A'=B'`<br>
+	`alpha` больше `beta`, если `A sup B <=> A' sub B'`      (у кого нижний класс меньше, тот раньше начался)<br>
+	`alpha` меньше `beta`, если `A sub B <=> A' sup B'`<br><br>
+
+<zero-md><script type="text/markdown">
+	### Утверждение
+</script></zero-md><br>
+	Если `alpha ne beta` то, либо `alpha > beta`, либо `alpha > beta`.<br><br>
+<zero-md><script type="text/markdown">
+	#### Доказательство
+</script></zero-md>
+	Пусть неверно, что `alpha > beta`, то есть значит `EE r_1 in QQ:r_1 in B,r_1 in A'` (то же, что и `r_1 notin A`, но без нового знака)<br>
+	а если неверно, что `alpha < beta`, то значит `EE r_2 in QQ:r_2 in A,r_2 in B'`.<br>
+	Получается, что  `r_1 in B, r_2 in B'`,то есть `r_1 < r_2`;
 
 
+<zero-md><script type="text/markdown">
+</script></zero-md>
 
 <!--  Опросник  --> <br><br><br><br><div id="questions"><div>Score: <span class="eqn" id="score_locator">0</span><br><br><span class="eqn" id="solution_render">``</span><br><br><span class="eqn" id="answer_render">``</span></div><div><form id="form" action="javascript:" autocomplete="off"><input id="answer_input" size="30"></form></div><div id="answer_result" style="color:lightgray"></div></div>
 </div><div id="page-content-wrapper"><div class="container-fluid"><div class="row"><div class="col-lg-12"></div></div></div></div></body><footer><script>includeHTML(); document.getElementById('form').onsubmit = next;</script></footer></html>

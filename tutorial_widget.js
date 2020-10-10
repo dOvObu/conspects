@@ -91,4 +91,3 @@ loadJSON('questions.json', function (response) {
     }
 })
 
-document.getElementById('form').onsubmit = next;

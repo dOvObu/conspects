@@ -16,7 +16,7 @@ function MakeNavBarBold() {
     }
 }
 
-function includeHTML() {
+function includeHTML(cb) {
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
     z = document.getElementsByTagName("*");
@@ -40,6 +40,7 @@ function includeHTML() {
             xhttp.open("GET", file, true);
             xhttp.send();
             /* Exit the function: */
+            cb();
             return;
         }
     }

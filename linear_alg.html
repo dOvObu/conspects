@@ -18,7 +18,43 @@
 </script></zero-md>
 	`A=([x,y,z],[r,g,b],[h,s,l])`
 	<br><br>
-	`|[x,y,z],[r,g,b],[h,s,l]| = x*|[g,b],[s,l]| - y*|[r,b],[h,l]| + z*|[r,g],[h,s]| = det A`<br>
+	`|[x,y,z],[r,g,b],[h,s,l]| = x*|[g,b],[s,l]| - y*|[r,b],[h,l]| + z*|[r,g],[h,s]| = det A`<br><br><br><br>
+<zero-md><script type="text/markdown">
+	## Метод Гаусса
+	Чтобы узнать, чему равны члены СЛАУ можно в её рассширенной матрице:
+	- менять две строки местами
+	- умножать строку на константу λ != 0
+	- вычитать из строки другую строку, умноженную на λ
+</script></zero-md><br>
+	`([color(red)(1),0,0|b_1],[0,color(red)(1),0|b_2],[0,0,color(red)(1)|b_3])~~{[color(red)(x_1) = b_1],[color(red)(x_2) = b_2], [color(red)(x_3) = b_3]:}`<br><br><br><br>
+<zero-md><script type="text/markdown">
+	## Плоскость и пространство
+	Это просто понятное название для кортежей из троек и пар вещественных чисел
+</script></zero-md>
+	`cc P_2 -= RR^2` и `cc P_3 -= RR^3`<br><br>причём, `cc P_2 sub cc P_3`<br><br><br><br>
+<zero-md><script type="text/markdown">
+	## Свойства операций `vec v`
+</script></zero-md><br>
+	`stackrel("нулевой вектор")(vec 0)"       "``stackrel("единичная константа")(1)`<br>
+	<ul>
+		<li>Умножению на константы и плюсу не важны скобки и порядок<ul>
+			<li>`((*, alpha, beta, vec c)) ~~ color(lightgray)(( color(black)( alpha * beta ))) * vec a = alpha * color(lightgray)(( color(black)(beta * vec a))) = alpha * beta * vec a`</li>
+			<li>`((+,vec a,vec b,vec c)) ~~ color(lightgray)(( color(black)( vec a + vec b ))) + vec c = vec a + color(lightgray)(( color(black)(vec b + vec c))) = vec c + vec a + vec b`<br><br></li>
+		</ul></li>
+			<li>Можно отбрасывать: `1` при `*`, `vec 0` при `+` и пары обратных векторов, при `+` с другими векторами<ul>
+			<li>`EE color(red)(vec 0) :" "vec a + color(red)(vec 0) = color(red)(vec 0) + vec a = vec a`</li>
+			<li>`EE color(red)(1) :" "color(red)(1) vec a = vec a`</li>
+			<li>`color(red)(-vec a) + color(red)(vec a) = color(red)(vec a - vec a) = vec 0`<br><br></li>
+		</ul></li>
+			<li>Можно выносить и константу, и вектор<ul>
+			<li>`color(red)(vec a) alpha + color(red)(vec a) beta = color(red)(vec a) (alpha + beta)`</li>
+			<li>`color(red)(lambda) vec a + color(red)(lambda) vec b = color(red)(lambda)(vec a + vec b)`</li>
+		</ul></li>
+	</ul>
+<zero-md><script type="text/markdown">
+	## Коллинеарны
+</script></zero-md>
+	вектора `a_1, a_2, ..., a_k`, если они все параллельны какой-то линии `EE l: (l " || " a_1) (l" || "a_2) ... (l" || "a_k)`
 
 
 

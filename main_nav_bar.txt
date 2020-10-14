@@ -1,5 +1,5 @@
 <li><a href="matan_intro.html" class="nav-link"> Введение в мат. анализ </a></li>
-<li><a href="mat_sut.html" class="nav-link"> Мат. анализ ))) </a></li>
+<li><a href="matan_sut.html" class="nav-link"> Мат. анализ ))) </a></li>
 <li><a href="linear_alg.html" class="nav-link"> Линейная       </a></li>
 <li><a href="#" class="nav-link"> Сплошная среда </a></li>
 <li><a href="#" class="nav-link"> Логика         </a></li>

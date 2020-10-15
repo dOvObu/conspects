@@ -14,6 +14,10 @@
     {
       "question": "\"Формальное определение предела \" lim_(x->x_o)f(x) = alpha",
       "answer" : "AA u_epsi(alpha): EE u_delta(x_o): x in u_delta(x_o) => f(x) in u_epsi(alpha)"
+    },
+    {
+      "question": "\"Формальное определение эпсилон окрестности \" u_epsi(x_o)",
+      "answer": "{x: |x - x_o| < epsi, 0 < epsi}"
     }
   ]
 }

@@ -8,5 +8,12 @@
       "question": "\"Как называется множество троек вещественных чисел \" RR^3",
       "answer" : "\"пространство\" cc P_3"
     }
+  ],
+
+  "Мат. анализ )))": [
+    {
+      "question": "\"Формальное определение предела \" lim_(x->x_o)f(x) = alpha",
+      "answer" : "AA u_epsilon(alpha): EE u_delta(x_o): x in u_delta(x_o) => f(x) in u_epsilon(alpha)"
+    }
   ]
 }

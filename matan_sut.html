@@ -15,7 +15,8 @@
 	## Предел `lim_(x->x_o)f(x)`
 </script></zero-md><br>
 	это число `alpha` , когда для любой кучи соседних с `alpha` исходов `u_(color(red)(epsi))(alpha)` найдётся куча соседних с `x_o` входов `u_(color(red)(delta))(x_o)`<br>
-	<br>Или проще<br>
+	<br>
+	Или проще<br>
 <zero-md><script type="text/markdown">
 	> [Кто говорит, что пребывает в Нём, тот должен поступать так, как Он поступал.](https://bible.by/syn/48/2/#6)
 </script></zero-md>
@@ -25,13 +26,91 @@
 	Или более пространно
 </script></zero-md>
 	Если правда, что ты в соседстве `f(x) in u_(epsi)(alpha)`, то твои поступки должны быть найдены как близкие к Его поступкам `x in u_(delta)(x_o)`,<br>
-	чтобы пределом твоих поступков было именно пребывание в Нём.
-	<br>Иначе, ты пассажир непонятный, и я не знаю, что с тобой будет.
-	<br>`(AA u_epsi(alpha): EE u_delta(x_o): x in u_delta(x_o) => f(x) in u_epsi(alpha)) <=> (alpha = lim_(x->x_o) f(x))`
-	<br><br><br>
+	чтобы пределом твоих поступков было именно пребывание в Нём.<br>
+	`(AA u_epsi(alpha): EE u_delta(x_o): x in u_delta(x_o) => f(x) in u_epsi(alpha)) <=> (alpha = lim_(x->x_o) f(x))`<br>
+	<br>
+	И `alpha`, и `x_o` могут быть равны и `+oo`, и `-oo`, и даже `oo`<br>
 
 	Благодаря пределу мы можем поселиться рядом с бесконечностью, не убегая на край света<br>
 	<img src="./img/mtn_sut_1.png">`(AA epsi: EE delta: |x-x_o| < delta = |f(x)| > epsi)<=>(lim_(x->x_o)f(x) = oo)`
+
+<zero-md><script type="text/markdown">
+	#### Граничная точка
+</script></zero-md>
+	`x_o` из `A` у которой любая `u_epsi(x_o)` содержит точки из `A`, и из не `A`.<br>
+	<br>
+
+<zero-md><script type="text/markdown">
+	#### Граница множества `del A`
+</script></zero-md>
+	это объединение всех граничных точек<br>
+	`del A`<br>
+	<br>
+
+<zero-md><script type="text/markdown">
+	#### Замыкание множества `overline A`
+</script></zero-md>
+	это множество с его оболочкой<br>
+	`overline A = A uu del A`<br>
+	<br>
+
+<zero-md><script type="text/markdown">
+	#### Замкнутое множество
+</script></zero-md>
+	равно своему замыканию<br>
+	`A = overline A`<br>
+	к пр., `[a,b] = overline ("["a, b"]")`<br>
+	<br>
+
+<zero-md><script type="text/markdown">
+	#### Предельная точка
+</script></zero-md>
+	`x_o` из `A` у которой любая `u_epsi(x_o)` пересекается с `A`<br>
+	<br>
+	<br>
+
+<zero-md><script type="text/markdown">
+	## Теорема о единственности
+</script></zero-md>
+	`{:[lim_(x->x_o)f(x)=a], [lim_(x->x_o)f(x)=b]} => a = b`<br>
+<zero-md><script type="text/markdown">
+	[предел не может быть разным для одного и того же способа достижения цели](https://bible.by/syn/19/1/#3)
+
+	Докажем<br>
+	Если разница между двумя штуками меньше вообще чем любая разница, то эти две штуки - одно и то же.
+</script></zero-md>
+	`(AA epsi > 0: |alpha-omega| < epsi) => alpha = omega`<br>
+<zero-md><script type="text/markdown">
+	Если взять наши достижения и недостатки вместе, то картина менее радужная, чем если бы мы приняли недостатки за что-то хорошее.
+</script></zero-md>
+	`|alpha-omega| = |alpha-f(x)+f(x)-omega| <= |alpha - f(x)| + |f(x) - omega|`<br>
+<zero-md><script type="text/markdown">
+	Пусть у нас есть разумные границы, и мы с ними одновременно попали в любое соседство с двумя как бы разными вещами.
+</script></zero-md>
+	`|x-x_o| < delta => {[|alpha - f(x)| < epsi/2], [|omega - f(x)| < epsi/2]:}`<br>
+
+<zero-md><script type="text/markdown">
+	Тогда, по _пессимистичному_ объединению этих соседств, разница между этими двумя штуками меньше любого нашего соседства.
+</script></zero-md>
+	`|alpha - f(x)|+|f(x) - omega| < epsi/2 + epsi/2`<br>
+	`|alpha - omega| < epsi`<br>
+<zero-md><script type="text/markdown">
+	А значит эти две штуки - [одно и то же](https://bible.by/syn/66/1/#8).
+</script></zero-md>
+	<br>
+	<br>
+<zero-md><script type="text/markdown">
+	## Теорема о сжатой переменной
+</script></zero-md>
+	`{:[u(x) < v(x) < w(x)], [lim_(x->x_o)u(x) = a], [lim_(x->x_o)w(x) = a]} =>
+	(lim_(x->x_o)v(x) = a)`<br>
+	<br>
+
+
+<zero-md><script type="text/markdown">
+</script></zero-md>
+
+
 
 <zero-md><script type="text/markdown">
 </script></zero-md>

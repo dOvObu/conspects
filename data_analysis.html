@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script><script src="ASCIIMathML.js"></script><script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script><link rel="stylesheet" href="style.css"><script src="tutorial_widget.js"></script>
+
+    <title>Анализ данных</title>
+
+</head><body><div style="position: fixed; top: 0px; left: 0px; bottom: 0px; width: 16rem; padding: 2rem 1rem; background-color: rgb(248,249,250); overflow-y: scroll; scrollbar-width: thin;"><h3 style='line-height: 1.2;font-weight:normal;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";'>Конспекты</h3><hr><ul class="nav-btns"><div w3-include-navbar="main_nav_bar.txt" id="main-nav-bar"></div></ul></div><div id="page-content" style="margin-left: 18rem; padding: .5rem 1rem;"><script src="include_html.js"></script>
+
+
+<!-- Содержимое страницы -->
+<zero-md><script type="text/markdown">
+    ## Распределение
+
+    это то, как часто встречается значение в переменных (в процентах, или в абсолютных значениях)
+
+
+    ## Генеральная совокупность
+
+    это все объекты (носители переменных)
+
+
+    ## Репрезентативная выборка
+
+    это такая часть объектов, у которой то же распределение, как и у генеральной совокупности из которой эта часть взята.
+
+
+    ## Гипотеза
+
+    это предпологаемое правило о переменных в объектах генеральной совокупности
+
+
+    ## Шаблон анализа данных
+    - описание интересных объектов (экспертами предметной области)
+    - выявление их api и придумывание гипотиз
+    - сбор и подготовка данных (попытка собрать репрезентативную выборку)
+    - разведочный анализ данных (поиск закономерностей, распределений и аномалий) [что имел в виду Джон Тьюки непоятно]
+    - отчистка данных от шумов и аномалий
+    - преобразование данных (подгон под единообразие)
+    - построение моделей (перегнать работающие гипотизы в формулы)
+    - интерпретация (размахивание новой формулой)
+</script></zero-md>
+
+<zero-md><script type="text/markdown">
+    ## Шкала измерений
+
+    это определение атомарного типа
+    - номинальная (enum, нужная для классификации| среднее брать нельзя)
+    - порядковая (место в массиве, нужно для сравнения и классификации| иногда среднее брать можно)
+    - интервальная (struct T{float val}, т.к. есть ноль, единица привязанные к типу| теряет смысл при переходе от шкалы к шкале)
+    - относительная (float val, т.к. абсолютный ноль значит полное отсутствие измеряемого| не теряет смысл при любых операциях)
+</script></zero-md>
+
+<zero-md><script type="text/markdown">
+</script></zero-md>
+
+
+
+<!--  Опросник  --> <br><br><br><br><div id="questions"><div>Score: <span class="eqn" id="score_locator">0</span><br><br><span class="eqn" id="solution_render">``</span><br><br><span class="eqn" id="answer_render">``</span></div><div><form id="form" action="javascript:" autocomplete="off"><input id="answer_input" size="30"></form></div><div id="answer_result" style="color:lightgray"></div></div>
+</div><div id="page-content-wrapper"><div class="container-fluid"><div class="row"><div class="col-lg-12"></div></div></div></div></body><footer><script> includeHTML(); </script></footer></html>

@@ -2,6 +2,7 @@
 <li><a href="matan_sut.html" class="nav-link"> Мат. анализ ))) </a></li>
 <li><a href="prob_sut.html" class="nav-link"> Теор. вер. ))) </a></li>
 <li><a href="linear_alg.html" class="nav-link"> Линейная       </a></li>
+<li><a href="data_analysis.html" class="nav-link"> Анализ данных </a></li>
 <li><a href="#" class="nav-link"> Сплошная среда </a></li>
 <li><a href="#" class="nav-link"> Логика         </a></li>
 <li><a href="unreaded_lists.html" class="nav-link"> TODO </a></li>

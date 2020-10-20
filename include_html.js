@@ -44,4 +44,8 @@ function includeHTML() {
             return;
         }
     }
+    var form = document.getElementById('form');
+    if (form) {
+        form.onsubmit = next;
+    }
 }

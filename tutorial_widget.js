@@ -11,10 +11,13 @@ window.MathJax = {
             next();
             var answer = document.getElementById('answer_input');
             var answer_render = document.getElementById('answer_render');
-            var jax = MathJax.Hub.getAllJax(answer_render)[0];
-            answer_input.addEventListener('input', function () {
-                MathJax.Hub.Queue(['Text', jax, answer.value])
-            })
+            if (answer && answer_render)
+            {
+                var jax = MathJax.Hub.getAllJax(answer_render)[0];
+                answer.addEventListener('input', function () {
+                    MathJax.Hub.Queue(['Text', jax, answer.value])
+                });
+            }
         })
     }
 };

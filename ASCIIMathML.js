@@ -39,13 +39,13 @@ var asciimath = {};
 (function(){
     var mathcolor = "black";       // change it to "" (to inherit) or another color
     var mathfontsize = "1em";      // change to e.g. 1.2em for larger math
-    var mathfontfamily = "serif";  // change to "" to inherit (works in IE)
+    var mathfontfamily = "inherit";// change to "" to inherit (works in IE)
                                    // or another family (e.g. "arial")
     var automathrecognize = false; // writing "amath" on page makes this true
     var checkForMathML = true;     // check if browser can display MathML
     var notifyIfNoMathML = true;   // display note at top if no MathML capability
     var alertIfNoMathML = false;   // show alert box if no MathML capability
-    var translateOnLoad = true;    // set to false to do call translators from js
+    var translateOnLoad = false;    // set to false to do call translators from js
     var translateASCIIMath = true; // false to preserve `..`
     var displaystyle = true;      // puts limits above and below large operators
     var showasciiformulaonhover = true; // helps students learn ASCIIMath

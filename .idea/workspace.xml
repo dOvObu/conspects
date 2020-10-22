@@ -25,15 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b6ba6c-dbf3-4b92-9b23-ea71b7821ed9" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/data_analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linear_alg.html" beforeDir="false" afterPath="$PROJECT_DIR$/linear_alg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matan_intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/matan_intro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matan_sut.html" beforeDir="false" afterPath="$PROJECT_DIR$/matan_sut.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prob_sut.html" beforeDir="false" afterPath="$PROJECT_DIR$/prob_sut.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unreaded_lists.html" beforeDir="false" afterPath="$PROJECT_DIR$/unreaded_lists.html" afterDir="false" />
-    </list>
+    <list default="true" id="f4b6ba6c-dbf3-4b92-9b23-ea71b7821ed9" name="Default Changelist" comment="update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +88,7 @@
       <workItem from="1603126972130" duration="15619000" />
       <workItem from="1603309587569" duration="5264000" />
       <workItem from="1603323438455" duration="311000" />
-      <workItem from="1603362292095" duration="5850000" />
+      <workItem from="1603362292095" duration="6167000" />
     </task>
     <task id="LOCAL-00001" summary="Add tasks list todo list">
       <created>1602974013709</created>
@@ -252,7 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603367864739</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update">
+      <created>1603368253055</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1603368253055</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update">
+      <created>1603368349919</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1603368349919</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +296,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="420" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603368327742">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="420" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.738@0.0.1366.738" timestamp="1603368327742" />
     <state x="92" y="92" width="1182" height="554" key="DiffContextDialog" timestamp="1602930206277">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -302,10 +312,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1602926383350" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1603365469141">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1603368357634">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1603365469141" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1603368357634" />
     <state x="500" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603130949009">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

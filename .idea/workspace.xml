@@ -25,10 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b6ba6c-dbf3-4b92-9b23-ea71b7821ed9" name="Default Changelist" comment="fix tutorial_widget">
+    <list default="true" id="f4b6ba6c-dbf3-4b92-9b23-ea71b7821ed9" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Thumbs.db" beforeDir="false" afterPath="$PROJECT_DIR$/img/Thumbs.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Thumbs.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
       <workItem from="1603126972130" duration="15619000" />
       <workItem from="1603309587569" duration="5264000" />
       <workItem from="1603323438455" duration="311000" />
-      <workItem from="1603362292095" duration="9361000" />
+      <workItem from="1603362292095" duration="10635000" />
     </task>
     <task id="LOCAL-00001" summary="Add tasks list todo list">
       <created>1602974013709</created>
@@ -276,7 +276,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603371096436</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update">
+      <created>1603372453026</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1603372453026</updated>
+    </task>
+    <task id="LOCAL-00028" summary="update">
+      <created>1603372501013</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1603372501013</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,9 +324,9 @@
     <MESSAGE value="Add tasks list todo list" />
     <MESSAGE value="Init prob" />
     <MESSAGE value="Update" />
-    <MESSAGE value="update" />
     <MESSAGE value="fix tutorial_widget" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix tutorial_widget" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="420" y="171" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603368327742">
@@ -331,10 +345,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1602926383350" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1603371100532">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1603372503445">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1603371100532" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1603372503445" />
     <state x="500" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603130949009">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

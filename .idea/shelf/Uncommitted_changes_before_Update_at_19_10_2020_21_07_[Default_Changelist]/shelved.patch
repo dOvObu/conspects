@@ -1,0 +1,105 @@
+Index: prob_sut.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html><html lang=\"ru\"><head><meta charset=\"utf-8\"><script type=\"module\" src=\"https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js\"></script><script src=\"https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML\"></script><link rel=\"stylesheet\" href=\"style.css\"><script src=\"tutorial_widget.js\"></script>\r\n\r\n    <title>Теория вероятности )))</title>\r\n\r\n</head><body><div style=\"position: fixed; top: 0px; left: 0px; bottom: 0px; width: 16rem; padding: 2rem 1rem; background-color: rgb(248,249,250); overflow-y: scroll; scrollbar-width: thin;\"><h3 style='line-height: 1.2;font-weight:normal;font-family: -apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";'>Конспекты</h3><hr><ul class=\"nav-btns\"><div w3-include-navbar=\"main_nav_bar.txt\" id=\"main-nav-bar\"></div></ul></div><div id=\"page-content\" style=\"margin-left: 18rem; padding: .5rem 1rem;\"><script src=\"include_html.js\"></script>\r\n\r\n\r\n<!-- Содержимое страницы -->\r\n<zero-md><script type=\"text/markdown\">\r\n\t## Начала комбинаторики\r\n</script></zero-md><br>\r\n    `A={a_1, a_2, ..., a_n}`<br>\r\n<zero-md><script type=\"text/markdown\">\r\n\t### Перестановка `P_n`\r\n</script></zero-md><br>\r\n    это упорядоченный набор из `n` разных `a_i in A`<br>Всего их `P_n = n! = 1 * 2 * ... * n`<br><br>\r\n<zero-md><script type=\"text/markdown\">\r\n    ### Размещение `A^k_n`\r\n</script></zero-md>\r\n    это перестановка, длиной может быть меньшей чем `n`<br>\r\n    Всего их `A^k_n = (n!)/((n-k)!) = (1 * 2 * ... * (n - k) * ... * n)/(1 * 2 * ... * (n - k)) = (n - k + 1) * (n - k + 2) * ... * n`\r\n    <br><br>\r\n\r\n<zero-md><script type=\"text/markdown\">\r\n    ### Размещение c повторениями `stackrel(~)(A^k_n)`\r\n</script></zero-md>\r\n    это размещение, в котором могут быть повторения<br>\r\n    Всего их `stackrel(~)(A^k_n) = n^k = n * n * ... * n`<br>\r\n    <br><br>\r\n\r\n<zero-md><script type=\"text/markdown\">\r\n    ### Сочетание `((k)(n))`\r\n</script></zero-md>\r\n    это размещение, в котором не важен порядок<br>\r\n    Всего их `((n)(k)) = (n!)/(k! (n-k)!) = (1*2*...*(n-k)*...*n)/((1*2*...*k)*(1*2*...*(n-k))) = ((n - k + 1)*...*n)/(1*2*...*k) = (A^k_n)/(P_k)` <br>\r\n    <br><br>\r\n\r\n\r\n<zero-md><script type=\"text/markdown\">\r\n    ### Сочетание без повторений `stackrel(~)(((k)(n)))`\r\n</script></zero-md>\r\n    это размещение с повторениями, в котором не важен порядок<br>\r\n    Всего их `stackrel(~)(((k)(n))) = ((n + k - 1)(k)) = ((n + k - 1)!)/(k! (n - 1)!)` <br>\r\n    <br><br>\r\n\r\n<zero-md><script type=\"text/markdown\">\r\n</script></zero-md>\r\n\r\n\r\n\r\n</div><div id=\"page-content-wrapper\"><div class=\"container-fluid\"><div class=\"row\"><div class=\"col-lg-12\"></div></div></div></div></body><footer><script>includeHTML(); document.getElementById('form').onsubmit = next;</script></footer></html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- prob_sut.html	(revision 6d3ba54e01ebbc423812bf09c86f0e2d28d77a12)
++++ prob_sut.html	(date 1603130757509)
+@@ -8,40 +8,48 @@
+ <!-- Содержимое страницы -->
+ <zero-md><script type="text/markdown">
+ 	## Начала комбинаторики
+-</script></zero-md><br>
+-    `A={a_1, a_2, ..., a_n}`<br>
++</script></zero-md>
++    Пусть у нас есть алфавит из `n`ескольких символов<br>
++    <br>
+ <zero-md><script type="text/markdown">
+ 	### Перестановка `P_n`
+-</script></zero-md><br>
+-    это упорядоченный набор из `n` разных `a_i in A`<br>Всего их `P_n = n! = 1 * 2 * ... * n`<br><br>
++</script></zero-md>
++    это набор из всех `n` разных символов, порядок которых важен<br>Всего их `P_n = n! = 1 * 2 * ... * n`<br>
++    Похоже на круговорот воды<br>
++    <br>
++
+ <zero-md><script type="text/markdown">
+     ### Размещение `A^k_n`
+ </script></zero-md>
+-    это перестановка, длиной может быть меньшей чем `n`<br>
+-    Всего их `A^k_n = (n!)/((n-k)!) = (1 * 2 * ... * (n - k) * ... * n)/(1 * 2 * ... * (n - k)) = (n - k + 1) * (n - k + 2) * ... * n`
+-    <br><br>
++    это наборы покороче чем в перестановке, порядок символов в которых тоже важен<br>
++    Всего их `A^k_n = (n!)/((n-k)!) = (1 * 2 * ... * (n - k) * ... * n)/(1 * 2 * ... * (n - k)) = (n - k + 1) * (n - k + 2) * ... * n`<br>
++    Похоже на воронку в кружке чая.<br>
++    <br>
+ 
+ <zero-md><script type="text/markdown">
+     ### Размещение c повторениями `stackrel(~)(A^k_n)`
+ </script></zero-md>
+     это размещение, в котором могут быть повторения<br>
+     Всего их `stackrel(~)(A^k_n) = n^k = n * n * ... * n`<br>
+-    <br><br>
++    Похоже на слова в европейских языках<br>
++    <br>
+ 
+ <zero-md><script type="text/markdown">
+     ### Сочетание `((k)(n))`
+ </script></zero-md>
+-    это размещение, в котором не важен порядок<br>
++    это набор из `k` без порядка возможно повторяющихся символов.<br>
+     Всего их `((n)(k)) = (n!)/(k! (n-k)!) = (1*2*...*(n-k)*...*n)/((1*2*...*k)*(1*2*...*(n-k))) = ((n - k + 1)*...*n)/(1*2*...*k) = (A^k_n)/(P_k)` <br>
+-    <br><br>
++    Похоже на виды рыбы, которую ловят в сеть.<br>
++    <br>
+ 
+ 
+ <zero-md><script type="text/markdown">
+     ### Сочетание без повторений `stackrel(~)(((k)(n)))`
+ </script></zero-md>
+-    это размещение с повторениями, в котором не важен порядок<br>
++    это сочетание, в котором нет повторений.<br>
+     Всего их `stackrel(~)(((k)(n))) = ((n + k - 1)(k)) = ((n + k - 1)!)/(k! (n - 1)!)` <br>
+-    <br><br>
++    Похоже на множество.<br>
++    <br>
+ 
+ <zero-md><script type="text/markdown">
+ </script></zero-md>
+Index: data_analysis.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- data_analysis.html	(date 1603128099605)
++++ data_analysis.html	(date 1603128099605)
+@@ -0,0 +1,27 @@
++<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8"><script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script><link rel="stylesheet" href="style.css"><script src="tutorial_widget.js"></script>
++
++    <title>Анализ данных</title>
++
++</head><body><div style="position: fixed; top: 0px; left: 0px; bottom: 0px; width: 16rem; padding: 2rem 1rem; background-color: rgb(248,249,250); overflow-y: scroll; scrollbar-width: thin;"><h3 style='line-height: 1.2;font-weight:normal;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";'>Конспекты</h3><hr><ul class="nav-btns"><div w3-include-navbar="main_nav_bar.txt" id="main-nav-bar"></div></ul></div><div id="page-content" style="margin-left: 18rem; padding: .5rem 1rem;"><script src="include_html.js"></script>
++
++
++<zero-md><script type="text/markdown">
++    ## Распределение
++
++    это какое значение как часто встречается (в абсолютных, либо в процентах)
++
++    ## Генеральная совокупность
++
++    это все объекты (носители переменных)
++
++    ## Репрезентативная выборка
++
++    это такая часть объектов, у которой распределение, как в генеральной совокупности
++</script></zero-md>
++
++
++<zero-md><script type="text/markdown">
++</script></zero-md>
++
++<!--  Опросник  --> <br><br><br><br><div id="questions"><div>Score: <span class="eqn" id="score_locator">0</span><br><br><span class="eqn" id="solution_render">``</span><br><br><span class="eqn" id="answer_render">``</span></div><div><form id="form" action="javascript:" autocomplete="off"><input id="answer_input" size="30"></form></div><div id="answer_result" style="color:lightgray"></div></div>
++</div><div id="page-content-wrapper"><div class="container-fluid"><div class="row"><div class="col-lg-12"></div></div></div></div></body><footer><script>includeHTML(); document.getElementById('form').onsubmit = next;</script></footer></html>

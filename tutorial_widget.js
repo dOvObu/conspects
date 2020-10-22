@@ -8,7 +8,7 @@ window.MathJax = {
     AuthorInit: function () {
         MathJax.Hub.Register.StartupHook('End', function () {
             MathJax.Hub.processSectionDelay = 0;
-            next();
+            nextQuestion();
             var answer = document.getElementById('answer_input');
             var answer_render = document.getElementById('answer_render');
             if (answer && answer_render)
@@ -25,7 +25,8 @@ window.MathJax = {
 
 solutions.ptr = -1;
 
-var next = function () {
+var nextQuestion = function () {
+
     if (window.solutions.data === undefined || window.solutions.ptr == -2) return;
 
     if (window.solutions.ptr >= 0) {

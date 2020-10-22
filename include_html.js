@@ -1,4 +1,5 @@
 
+
 function MakeNavBarBold() {
     var main_nav = document.getElementById("main-nav-bar").childNodes;
     var hr_list = window.location.toString().split("/");
@@ -17,6 +18,7 @@ function MakeNavBarBold() {
 }
 
 function includeHTML() {
+
     var z, i, elmnt, file, xhttp;
     /* Loop through a collection of all HTML elements: */
     z = document.getElementsByTagName("*");
@@ -43,9 +45,5 @@ function includeHTML() {
             
             return;
         }
-    }
-    var form = document.getElementById('form');
-    if (form) {
-        form.onsubmit = next;
     }
 }

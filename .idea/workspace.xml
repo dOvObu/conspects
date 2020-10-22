@@ -25,7 +25,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b6ba6c-dbf3-4b92-9b23-ea71b7821ed9" name="Default Changelist" comment="update" />
+    <list default="true" id="f4b6ba6c-dbf3-4b92-9b23-ea71b7821ed9" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include_html.js" beforeDir="false" afterPath="$PROJECT_DIR$/include_html.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linear_alg.html" beforeDir="false" afterPath="$PROJECT_DIR$/linear_alg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matan_intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/matan_intro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matan_sut.html" beforeDir="false" afterPath="$PROJECT_DIR$/matan_sut.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prob_sut.html" beforeDir="false" afterPath="$PROJECT_DIR$/prob_sut.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tutorial_widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/tutorial_widget.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +97,7 @@
       <workItem from="1603126972130" duration="15619000" />
       <workItem from="1603309587569" duration="5264000" />
       <workItem from="1603323438455" duration="311000" />
-      <workItem from="1603362292095" duration="6167000" />
+      <workItem from="1603362292095" duration="7971000" />
     </task>
     <task id="LOCAL-00001" summary="Add tasks list todo list">
       <created>1602974013709</created>
@@ -258,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603368349919</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update">
+      <created>1603368478945</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1603368478945</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,10 +328,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1602926383350" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1603368357634">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1603368491730">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1603368357634" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1603368491730" />
     <state x="500" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603130949009">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

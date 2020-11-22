@@ -25,19 +25,19 @@
   "Таблица пределов": [
     {
       "question": "\"Первый замечательный предел\"",
-      "answer" : "lim_(x->0)sin x/x = 1"
+      "answer" : "lim_(x->0) sin x/x = 1"
     },
     {
       "question": "\"Второй замечательный предел\"",
-      "answer" : "lim_(x->0)(1+x)^(1/x) = e"
+      "answer" : "lim_(x->0)(1 + x)^(1/x) = e"
     },
     {
       "question": "\"Следствие первого замечательного предела с \"tan",
-      "answer" : "lim_(x->0)(tan x)/x = 1"
+      "answer" : "lim_(x->0) tan x/x = 1"
     },
     {
       "question": "\"Следствие первого замечательного предела с \"arcsin",
-      "answer" : "lim_(x->0)(arcsin x)/x = 1"
+      "answer" : "lim_(x->0) arcsin x/x = 1"
     },
     {
       "question": "\"Следствие первого замечательного предела с \"cos",
@@ -45,11 +45,11 @@
     },
     {
       "question": "\"Следствие первого замечательного предела с \"arctan",
-      "answer" : "lim_(x->0)(arctan x)/x = 1"
+      "answer" : "lim_(x->0) arctan x/x = 1"
     },
     {
       "question": "\"Следствие второго замечательного предела с ln\"",
-      "answer" : "lim_(x->0)(ln(1 + x))/x = 1"
+      "answer" : "lim_(x->0) ln(1 + x)/x = 1"
     },
     {
       "question": "\"Следствие второго замечательного предела с \"e^x",
@@ -57,11 +57,11 @@
     },
     {
       "question": "\"Следствие второго замечательного предела с \"log_alpha",
-      "answer" : "lim_(x->0)(log_alpha(1+x))/(x/(ln alpha)) = 1"
+      "answer" : "lim_(x->0) log_alpha(1 + x) / (x / ln alpha) = 1"
     },
     {
       "question": "\"Следствие второго замечательного предела с \"alpha^x",
-      "answer" : "lim_(x->0)(alpha^x - 1)/(x*ln(alpha)) = 1"
+      "answer" : "lim_(x->0)(alpha^x - 1) / (x * ln(alpha)) = 1"
     },
     {
       "question": "\"При \"x->0\" список бесконечно малых, эквивалентных\" x",
@@ -69,11 +69,11 @@
     },
     {
       "question": "(alpha^x - 1)\", при \"x->0\", эквивалентно\"",
-      "answer" : "x * ln a"
+      "answer" : "x * ln alpha"
     },
     {
       "question": "log_alpha(1 + x)\", при \"x->0\", эквивалентно\"",
-      "answer" : "x / (ln a)"
+      "answer" : "x / ln alpha"
     },
     {
       "question": "((1 + x)^alpha - 1)\", при \"x->0\", эквивалентно\"",

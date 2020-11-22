@@ -44,7 +44,7 @@ var nextQuestion = function () {
             --score;
             result.innerText = '\n\nна вопрос:\n\t' + valid_input['question']
                 + '\n\nверным был бы ответ:\n\t' + valid_input['answer'];
-            window.solutions.ptr = Math.max(window.solution.ptr - 3, 0) - 1;
+            window.solutions.ptr = Math.max(window.solutions.ptr - 3, 0) - 1;
         }
         score_locator.innerText = score.toString();
     }

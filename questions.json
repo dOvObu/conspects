@@ -64,7 +64,7 @@
       "answer" : "lim_(x->0)(alpha^x - 1) / (x * ln alpha) = 1"
     },
     {
-      "question": "\"При \"x->0\" список бесконечно малых, эквивалентных\" x",
+      "question": "\"При \"x->0\" список бесконечно малых, эквивалентных \" x",
       "answer" : "sin x, tan x, arcsin x, arctan x, ln(1 + x), (e^x - 1)"
     },
     {

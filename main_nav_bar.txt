@@ -3,6 +3,7 @@
 <li><a href="prob_sut.html" class="nav-link"> Теор. вер. ))) </a></li>
 <li><a href="linear_alg.html" class="nav-link"> Линейная       </a></li>
 <li><a href="data_analysis.html" class="nav-link"> Анализ данных </a></li>
+<li><a href="planing.html" class="nav-link"> Планирование </a></li>
 
 <li><a href="table_limits.html"      class="nav-link"> Таблица пределов </a></li>
 <li><a href="table_derivatives.html" class="nav-link"> Таблица производных </a></li>

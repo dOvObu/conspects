@@ -137,7 +137,7 @@
 	},
 	{
 	  "question": "\"Производная \" f(x) = tg x",
-	  "answer": "1/(cos^2 x)"
+	  "answer": "1 /cos^2 x"
 	},
 	{
 	  "question": "\"Производная \" f(x) = ctg x",

@@ -183,7 +183,7 @@
       "answer" : "x + C"
     },
     {
-      "question": "int x^n",
+      "question": "int x^n dx",
       "answer" : "x^(n + 1)/(n + 1) + C, n != -1, x > 0"
     },
     {

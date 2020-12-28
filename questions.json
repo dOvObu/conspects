@@ -141,7 +141,7 @@
 	},
 	{
 	  "question": "\"Производная \" f(x) = ctg x",
-	  "answer": "-1/(sin^2 x)"
+	  "answer": "-1 /sin^2 x"
 	},
 	{
 	  "question": "\"Производная \" f(x) = arcsin x",

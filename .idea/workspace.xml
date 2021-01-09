@@ -27,7 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f4b6ba6c-dbf3-4b92-9b23-ea71b7821ed9" name="Default Changelist" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planing.html" beforeDir="false" afterPath="$PROJECT_DIR$/planing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matan_sut.html" beforeDir="false" afterPath="$PROJECT_DIR$/matan_sut.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +93,8 @@
       <workItem from="1603323438455" duration="311000" />
       <workItem from="1603362292095" duration="10661000" />
       <workItem from="1609004014019" duration="9422000" />
-      <workItem from="1609075708109" duration="2400000" />
+      <workItem from="1609075708109" duration="2454000" />
+      <workItem from="1610201854646" duration="8754000" />
     </task>
     <task id="LOCAL-00001" summary="Add tasks list todo list">
       <created>1602974013709</created>
@@ -361,10 +362,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="500" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1603130949009" />
-    <state x="339" y="159" key="run.anything.popup" timestamp="1601857112846">
+    <state x="339" y="159" key="run.anything.popup" timestamp="1610212835187">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="339" y="159" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1601857112846" />
+    <state x="339" y="159" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1610212835187" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1609024052257">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

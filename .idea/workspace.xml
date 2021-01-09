@@ -26,7 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4b6ba6c-dbf3-4b92-9b23-ea71b7821ed9" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/main_nav_bar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/main_nav_bar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matan_sut.html" beforeDir="false" afterPath="$PROJECT_DIR$/matan_sut.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +94,7 @@
       <workItem from="1603362292095" duration="10661000" />
       <workItem from="1609004014019" duration="9422000" />
       <workItem from="1609075708109" duration="2454000" />
-      <workItem from="1610201854646" duration="15745000" />
+      <workItem from="1610201854646" duration="20559000" />
     </task>
     <task id="LOCAL-00001" summary="Add tasks list todo list">
       <created>1602974013709</created>

@@ -48,6 +48,56 @@
 
 <zero-md><script type="text/markdown">
 	---
+	### Шестнадцать случаев, которыми можно определить предел
+
+</script></zero-md><br>
+	На твою эпсилон вокруг альфы, у меня найдётся дельта вокруг икс нулевого<br>
+	И все мои иксы из округа дельта в твой округ эпсилон через функцию эфффф проскочууут<br>
+	Компрендо?
+	<br><br><br>
+
+	1) `AA epsi: EE delta: |x - x_o| < delta => |f(x) - alpha| < epsi`<br>
+	Мексиканцы из одного города, снимают двушку `lim_(x->x_o)f(x)=alpha`
+	<br><br><br>
+
+	2) `AA epsi: EE delta: delta < x => |f(x) - alpha| < epsi`<br>
+	Горные мексиканцы снимают двушку `lim_(x->+oo)f(x)=alpha`
+	<br><br><br>
+
+	3) `AA epsi: EE delta: x < delta => |f(x) - alpha| < epsi`<br>
+	Степные мексиканцы снимают двушку `lim_(x->-oo)f(x)=alpha`
+	<br><br><br>
+
+	4) `AA epsi: EE delta: delta < |x| => |f(x) - alpha| < epsi`<br>
+	Все мексиканцы, не считая жителей Мехико, снимают двушку `lim_(x->-oo)f(x)=alpha`
+	<br><br><br>
+
+	5) `AA epsi: EE delta: |x-x_o| < delta => epsi < f(x)`<br>
+	Мексиканцы из одного города, поселились в башнях `lim_(x->x_o)f(x)=+oo`
+	<br><br><br>
+
+	6) `AA epsi: EE delta: delta < x => epsi < f(x)`<br>
+	Дальше сами. У вас получится) `lim_(x->+oo)f(x)=+oo`
+	<br><br><br>
+
+	7) `AA epsi: EE delta: x < delta => epsi < f(x)`<br>
+	... `lim_(x->-oo)f(x)=+oo`
+	<br><br><br>
+
+	8) `AA epsi: EE delta: delta < |x| => epsi < f(x)`<br>
+	... `lim_(x->oo)f(x)=+oo`
+	<br><br><br>
+
+	9) `AA epsi: EE delta: |x-x_o| < delta => f(x) < epsi`<br>
+	... `lim_(x->x_o)f(x)=-oo`
+	<br><br><br>
+
+	И так ещё 7 определений. Думаю понятно из каких кусков они состоят и то, что `f` тут это зависимость высоты от высоты.<br>
+	Прошу прощения у всех мексиканцев, которых обидела эта шутка. Просто, я дурачёк насмотревшийся "Южного парка".
+	<br><br><br>
+
+<zero-md><script type="text/markdown">
+	---
 	#### Граничная точка
 </script></zero-md>
 	`x_o` из `A` у которой любая `u_epsi(x_o)` содержит точки из `A`, и из не `A`.<br>
@@ -111,7 +161,7 @@
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`|x-x_o| < delta => {[|alpha - f(x)| < epsi/2], [|omega - f(x)| < epsi/2]:}`<br><br>
 <zero-md><script type="text/markdown">
 	- Получается, сумма разниц альфы и омеги с результатом работы функции<br>
-	меньше чем эпсилон
+	меньше чем вообще любая разница
 </script></zero-md><br>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`|alpha - f(x)|+|f(x) - omega| < epsi/2 + epsi/2`<br><br>
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`|alpha - omega| <= |alpha - f(x)|+|f(x) - omega| < epsi`<br><br>

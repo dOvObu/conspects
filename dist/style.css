@@ -22,7 +22,7 @@ img {
 }
 
 
-code {
+pre {
 	overflow-y: scroll;
 	scrollbar-width: thin;
 }

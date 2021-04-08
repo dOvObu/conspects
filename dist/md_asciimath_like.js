@@ -29,8 +29,8 @@
 			.replaceAll(/\\\[[^\n\\]+\\\]/g, asciimath2latex( "$$", "$$" ))
 			.replaceAll(/\\\([^\n\\]+\\\)/g, asciimath2latex("\\(", "\\)"))
 	
-			.replaceAll(   /```([^`]+)```/g, "<pre>$1</pre>"  )
-			.replaceAll(     /`([^`]+)`/g  , "<code>$1</code>")
+			.replaceAll(   /```([^`]+)```/g, "<pre class='prettyprint'>$1</pre>"  )
+			.replaceAll(     /`([^`]+)`/g  , "<code class='prettyprint'>$1</code>")
 			
 			.replaceAll(/\n#####\s+(.+)\n/g, "\n<h5>$1</h5>\n")
 			.replaceAll( /\n####\s+(.+)\n/g, "\n<h4>$1</h4>\n")

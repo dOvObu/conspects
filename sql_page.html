@@ -141,7 +141,7 @@ create table MyTable(
 	-- можно потребовать, чтобы данные в столбце не повторялись
 	Skill char(20) NOT NULL UNIQUE,
 
-	-- можно проверять данные выражениями
+	-- можно проверять данные сравнениями
 	Cost integer CHECK(Cost > 0),
 
 	-- можно потребовать уникальность комбинации
@@ -167,7 +167,7 @@ drop table MyTable
 ## alter table
 
 
-Тут то же самое со столбцами. 
+Если мы хотим что-то сделать со столбцами, то тут то же самое.
 
 ```
 -- они либо пересоздаются (модифицируются)
@@ -188,7 +188,7 @@ alter table MyTable drop column NewColumn
 ```
 -- просто пишется куда и что нужно вставить
 
-insert into MyTable values (
+insert into MyTable values(
 	8,
 	'Фалафель',
 	'Сухой прошлогодний фалафель, но вам и этого достаточно',
@@ -216,9 +216,33 @@ delete from MyTable where Id=8
 Эта команда для поиска данных.
 
 ```
--- вначале пишется фильтрующее выражение, а потом откуда нужно брать данные
--- (звезда (Клини?) *, что подходит что угодно)
-select * from MyTable
+-- вначале пишутся столбцы, которые хотим, а потом, где в какой таблице их искать
+select * from MyTable -- звезда, значит хотим все
+
+-- тут хотим столбец со строкой, переименованный в Title, хотим столбец с Id
+-- и всё это должно быть отсортировано по убыванию стоимости
+select StringWithFixedSize Title, Id from MyTable order by Cost desc
+
+-- Коротко? Не то слово! А если хочешь сортировать по возостанию, просто desc не пиши
+
+-- и конечно можно искать данные по нескольким таблицам,
+-- сортировать по нескольким столбцам, в порядке убывания приоритета
+
+-- можно на лету считать и записывать данные в новый столбец
+select Cost, Cost*100 as CostMultipiedBy100 from MyTable, YourTable order by Cost
+
+-- можно выводить только уникальные данные
+select distinct Cost from MyTable order by Cost desc
+
+-- можно фильтровать данные каким-нибудь сравнением
+select distinct Cost, StringWithFixedSize from MyTable where Cost < 100
+select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND NOT 50 < Cost AND SomeText IS NOT NULL
+select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND Id IN (1, 2, 3)
+
+-- ещё в фильтрах есть урезанная версия регулярных выражений
+-- процент значит любую последовательность символов, включая пустую строку,
+-- а нижнее подчёркивание значит один любой символ
+select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND StringWithFixedSize LIKE 'Сырок%'
 
 
 ```

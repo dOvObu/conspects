@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<script src="dist/asciimath2tex.umd.js"></script>
+<script src='dist/md_asciimath_like.js'></script>
+<link rel="stylesheet" href="dist/style.css">
+
+	
+<title>Конспекты</title>
+</head>
+<body>
+
+
+[NAVBAR Главная :: index.html]
+
+# Об SQL, корохотенько
+
+![https://www.macworld.co.uk/cmsdata/features/3638150/setup_learn_sql_mac_thumb1200_4-3.jpg](intro)
+
+
+SQL структурированный язык запросов к базам данных.
+
+Самих запросов бывает 3 типа:
+
+1. создающие(и уничтожающие)
+2. меняющие структуру
+3. меняющие уровень доступа.
+
+
+В базу данных можно класть таблицы, в таблицах есть столбцы,
+в столбцах есть данные заданного типа,
+которые подходят по заданным ограничениям.
+
+
+Перед тем как данные в базу собирать, её проектируют
+
+# ER диаграма
+
+Вначале рисуется диаграма взаимоотношений сущностей
+
+![https://d3n817fwly711g.cloudfront.net/uploads/2012/03/ER-Diagram-Example.jpeg](ER диаграма)
+
+Вот сущность *Писатель* имеет связь *Создать* с сущностью *Новелла*.
+
+![https://d3n817fwly711g.cloudfront.net/blog/wp-content/uploads/2012/03/Attributes-ER-Diagrams.jpeg](ещё ER диаграма)
+
+Вот сущность *Покупатель* имеет аттрибуты *Имя*, *Адрес*, *Id*-шник. Атрибут, особенный для отдельной реальзации сущности, называется **ключом** и на таких диаграмах вообще-то должен подчёркиваться, а тут **сурогатный**, в реальной жизни не существующий **ключ** *Id* нифига не подчёркнут. Ну не подчёркнут и не подчёркнут.
+
+Ещё **ключ** бывает **составной** из нескольких атрибутов, но об этом потом.
+
+
+# Перегон диаграмы в таблицы
+
+Для каждой сущности должна создаваться таблица. Там каждая строка -- отдельная реализация сущности, а столбец -- это атрибут.
+
+</body>
+</html>

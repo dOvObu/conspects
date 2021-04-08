@@ -24,6 +24,11 @@ img {
 
 .nav-btns a {
 	color: white;
+	text-decoration: none;
+}
+
+.nav-btns a:hover {
+	color: red;
 }
 
 h1 {

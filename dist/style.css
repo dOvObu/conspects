@@ -22,6 +22,11 @@ img {
 }
 
 
+code {
+	overflow-y: scroll;
+	scrollbar-width: thin;
+}
+
 .nav-btns a {
 	color: white;
 	text-decoration: none;

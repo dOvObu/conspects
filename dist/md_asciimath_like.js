@@ -24,6 +24,8 @@
 				}
 			)
 			
+			.replaceAll( /\[NAVBAR (.*)\]/g, function(_,list){ return '<div id="naw-bars" style="position: fixed; top: 0px; left: 0px; bottom: 0px; width: 0%; padding: 2rem 1rem; overflow-y: scroll; scrollbar-width: thin; resize: horizontal; overflow: hidden; background-color:rgba(45,45,45,0.9);"><ul class="nav-btns">' + list.split(',').map(x => '<a href="'+x.split('::').reverse().join('">')+'</a>').join('<br>') + '</ul></div>'; } )
+			
 			.replaceAll(/\\\[[^\n\\]+\\\]/g, asciimath2latex( "$$", "$$" ))
 			.replaceAll(/\\\([^\n\\]+\\\)/g, asciimath2latex("\\(", "\\)"))
 	

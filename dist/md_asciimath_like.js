@@ -53,8 +53,8 @@
 			.replaceAll(        /\\\((.*): e q(.*)\\\)/g, '\\($1=$2\\)' )
 			.replaceAll(        /\\\[(.*): e q(.*)\\\]/g, '\\[$1=$2\\]' )
 			
-			.replaceAll(        /!\[([^\n]+)\]\((.*)\)/g,       "<img src=\"$1\" alt=\"$2\">")
-			.replaceAll(        /\[([^\n]+)\]\((.*)\)/g,       "<a href=\"$1\">$2<\a>")
+			.replaceAll(        /!\[([^\n]+)\]\((^\))\)/g,       "<img src=\"$1\" alt=\"$2\">")
+			.replaceAll(        /\[([^\n]+)\]\((^\))\)/g,       "<a href=\"$1\">$2<\a>")
 			.replaceAll(        /\[yt ([^\n]+)\]/g, "<iframe width=\"560\" height=\"315\" src=\"$1\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>")
 			.replaceAll(        /\[TEST ([^\n\s]+)\]/g, '<div id="TEST">Score: <span id="$1_score">0</span><br><span id="$1_question"></span><br><input id="$1" type="text" size="40"><br><span id="$1_answer"></span><br><span id="$1_hint" style="color: grey"></span><br></div>' )
 			.replaceAll(        /\<tab(\d+)\>/g, function(_,line){return "&nbsp;".repeat(parseInt(line))})

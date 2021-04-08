@@ -21,6 +21,11 @@ img {
 	text-align: center;
 }
 
+
+.nav-btns a {
+	color: white;
+}
+
 h1 {
 	font-family: 'Courier New';
 	text-align: center;

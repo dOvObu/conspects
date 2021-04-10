@@ -111,11 +111,11 @@ SQL структурированный язык запросов к базам �
 Можно создать базу данных и сразу дописать в неё всяких настроек
 
 ```
- create database Test
-	datafile 'test_system' -- где хранить БД
-	size 20M -- начальный размер БД
-	-- и так далее --
-
+create database Test
+    datafile 'test_system' -- где хранить БД
+    size 20M               -- начальный размер БД
+    -- и так далее --
+;
 
 ```
 
@@ -151,7 +151,7 @@ create table MyTable(
 	-- так же выглядит составной ключ
 	-- primary key(Id, Cost)
 
-)
+);
 
 ```
 
@@ -174,12 +174,17 @@ drop table MyTable
 -- они либо пересоздаются (модифицируются)
 alter table MyTable
 alter column Cost type NUMERIC(42,2) NOT NULL
+;
 
 -- либо создаются
-alter table MyTable add NewColumn varchar(15) NOT NULL
+alter table MyTable
+add NewColumn varchar(15) NOT NULL
+;
 
 -- либо удаляются
-alter table MyTable drop column NewColumn
+alter table MyTable
+drop column NewColumn
+;
 
 
 ```
@@ -200,7 +205,7 @@ insert into MyTable values(
 	'2021-04-30',
 	'Жесть',
 	2200
-)
+);
 
 
 ```
@@ -209,7 +214,7 @@ insert into MyTable values(
 
 ```
 -- просто пишется откуда и что именно нужно удалить
-delete from MyTable where Id=8
+delete from MyTable where Id=8;
 
 
 ```
@@ -224,8 +229,9 @@ delete from MyTable where Id=8
 
 ```
 update MyTable
-	set StringWtihFixedSize = 'unknown', SomeText = '...'
+set StringWtihFixedSize = 'unknown', SomeText = '...'
 where Cost < 10
+;
 
 ```
 
@@ -244,44 +250,47 @@ where Cost < 10
 -- Сперва пишутся столбцы, которые мы хотим.
 -- Затем, из какой таблицы мы хотим их взять.
 -- звезда, значит хотим все
-select * from MyTable
+select * from MyTable;
 
 
 -- Тут хотим столбец со строкой, переименованный в Title, и столбец с Id
 -- А ещё, пусть всё это будет отсортировано по убыванию Cost
-select StringWithFixedSize Title, Id from MyTable order by Cost desc -- без desc, будет по возростанию
+select StringWithFixedSize Title, Id from MyTable order by Cost desc; -- без desc, будет по возростанию
 
 
 -- Можно искать данные по нескольким таблицам.
 -- Можно сортировать по нескольким столбцам, в порядке убывания приоритета.
 -- Можно на лету считать и записывать результат в новый столбец
-select Cost, Cost*100 as CostMultipiedBy100 from MyTable, YourTable order by Cost
+select Cost, Cost*100 as CostMultipiedBy100 from MyTable, YourTable order by Cost;
 
 
 -- Можно вывести, к примеру, одни лишь уникальные данные
-select distinct Cost from MyTable order by Cost desc
+select distinct Cost from MyTable order by Cost desc;
 
 
 -- можно фильтровать данные каким-нибудь сравнением
-select distinct Cost, StringWithFixedSize from MyTable where Cost < 100
-select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND NOT 50 < Cost AND SomeText IS NOT NULL
-select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND Id IN (1, 2, 3)
+select distinct Cost, StringWithFixedSize from MyTable where Cost < 100;
+select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND NOT 50 < Cost AND SomeText IS NOT NULL;
+select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND Id IN (1, 2, 3);
 
 
 -- Ещё в фильтрах есть урезанная версия регулярных выражений
 select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND StringWithFixedSize LIKE 'Сырок%'
-
+;
 -- '%' - любая последовательность символов любой длины.
 -- '_' - один любой символ
 
 
 -- ещё есть агрегирующие операторы возвращающие всего одну ячейку
 select string_agg(StringWithFixedSize, ';'), sum(Cost), count(*), avg(Cost), min(Cost), max(Cost) from MyTable
-
+;
 
 -- А ещё можно сцепить две таблицы, согласно какому-нибудь правилу
-select *
-from Students as st
+select st.Name, res.Grade
+from Students st           -- для каждой строки таблицы слева
+inner join ExamResult res  -- берём строку из таблицы справа
+on st.StudId = res.StudId  -- подходящуу по правилу
+;
 
 
 ```

@@ -285,6 +285,10 @@ select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND Stri
 select string_agg(StringWithFixedSize, ';'), sum(Cost), count(*), avg(Cost), min(Cost), max(Cost) from MyTable
 ;
 
+-- ещё можно разбивать таблицу на группы по какому-нибудь атрибуту, чтобы агрегировать данные для каждой группы отдельно
+select string_agg(StringWithFixedSize, ';'), count(*), sum(Cost) from MyTable group by Cost;
+
+
 -- А ещё можно сцепить две таблицы, согласно какому-нибудь правилу
 select st.Name, res.Grade
 from Students st           -- для каждой строки таблицы слева

@@ -130,7 +130,7 @@ create table MyTable(
  	-- NOT NULL значит, что в столбце не может быть пустых ячеек
 	StringWithFixedSize char(10) NOT NULL,
 
-	-- это то же что и строка выше, но может становиться длиннее 250 символов
+	-- это то же что и строка выше, но строки могут быть короче 250 символов и дополняться пробелами автоматически не будут.
 	SomeText varchar(250),
 
 	-- это число с фиксированной точкой (всего 2 символа после запятой)
@@ -172,7 +172,8 @@ drop table MyTable
 
 ```
 -- они либо пересоздаются (модифицируются)
-alter table MyTable modify Cost NUMERIC(42,2) NOT NULL
+alter table MyTable
+alter column Cost type NUMERIC(42,2) NOT NULL
 
 -- либо создаются
 alter table MyTable add NewColumn varchar(15) NOT NULL
@@ -267,10 +268,20 @@ select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND NOT 
 select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND Id IN (1, 2, 3)
 
 
--- Ещё в фильтрах есть урезанная версия регулярных выражений.
--- Тут процент значит любую последовательность символов, включая пустую строку,
--- а нижнее подчёркивание значит один любой символ
+-- Ещё в фильтрах есть урезанная версия регулярных выражений
 select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND StringWithFixedSize LIKE 'Сырок%'
+
+-- '%' - любая последовательность символов любой длины.
+-- '_' - один любой символ
+
+
+-- ещё есть агрегирующие операторы возвращающие всего одну ячейку
+select string_agg(StringWithFixedSize, ';'), sum(Cost), count(*), avg(Cost), min(Cost), max(Cost) from MyTable
+
+
+-- А ещё можно сцепить две таблицы, согласно какому-нибудь правилу
+select *
+from Students as st
 
 
 ```

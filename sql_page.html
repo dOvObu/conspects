@@ -281,12 +281,30 @@ select distinct Cost, StringWithFixedSize from MyTable where Cost < 100 AND Stri
 -- '_' - один любой символ
 
 
--- ещё есть агрегирующие операторы возвращающие всего одну ячейку
+-- ещё есть функции агрегирования, возвращающие всего одну ячейку
 select string_agg(StringWithFixedSize, ';'), sum(Cost), count(*), avg(Cost), min(Cost), max(Cost) from MyTable
 ;
 
--- ещё можно разбивать таблицу на группы по какому-нибудь атрибуту, чтобы агрегировать данные для каждой группы отдельно
+-- можно разбить таблицу на группы по какому-нибудь атрибуту, чтобы агрегировать данные для каждой группы отдельно
 select string_agg(StringWithFixedSize, ';'), count(*), sum(Cost) from MyTable group by Cost;
+
+
+-- на каждую группу можно накладывать ограничение через ключевое слово having
+select string_agg(StringWithFixedSize, ';'), count from MyTable group by Cost having SomeText IS NOT NULL
+;
+
+
+```
+
+## с несоклькими таблицами
+
+```
+-- Можно использовать вложенные запросы, чтобы отфильтровать данные
+select * from Orders where ProductId=(select ProductId from Products where ProductName='Карандаш')
+
+-- или чтобы добавить в качестве столбец из другой таблицы
+select OrderId, (select ProductName from Products where Products.ProductId = Orders.ProductId) from Orders
+
 
 
 -- А ещё можно сцепить две таблицы, согласно какому-нибудь правилу
@@ -295,6 +313,15 @@ from Students st           -- для каждой строки таблицы с
 inner join ExamResult res  -- берём строку из таблицы справа
 on st.StudId = res.StudId  -- подходящуу по правилу
 ;
+
+-- вместо inner, можно сохранять строки из левого(left), либо правого(right) столбца, либо из обоих столбцов(full)
+
+
+
+-- Кроме того, перечесление нескольких таблиц после from, работает как декартово произведение строк
+select * from MyTable, YourTable -- все возможные сочетания моих и ваших строк
+-- и их можно потом фильтровать
+
 
 
 ```

@@ -45,9 +45,38 @@
 - и запускаторы компилятора и интерпретатора (runghc, runhaskell)
 
 
-В repl можно поменять строку приглашения `:set prompt "жопа> "`
+В repl приглашение `Prelude> ` значит, что уже сразу подключен модуль `Prelude`.
+Можно поменять строку приглашения `:set prompt "жопа> "`,
+или повводить выражения `33+3*3`, `"ABC"++"DEFG"`.
 
 
+Как текстовый редактор можно поставить [http://mirror.tochlab.net/pub/gnu/emacs/windows/emacs-27](emacs)
+с расширением spacemacs.
+
+### spacemacs на шindows
+
+После установки emacs, делаем бекап папки `C:/Users/<username>/AppData/Roaming/.emacs.d`
+
+![https://simpletutorials.com/c/spacemacs/mqt72al0/static/4.png](переименовали в .emacs.d.old)
+
+И [https://git-scm.com/download/win](git)-ом клонируем всё необходимое
+
+```
+git clone https://github.com/syl20bnr/spacemacs .emacs.d
+```
+
+![https://simpletutorials.com/c/spacemacs/mqt72al0/static/5.png](клонируем spacemacs git-ом)
+
+У emacs на windows проблемы с https, поэтому для обновлений его нужно запустить так:
+
+Win + R
+
+```
+runemacs --insecure
+```
+
+Затем, нужно выбрать раскладку (vim или emacs) и полную, либо облегчённую версию spacemacs.
+Spacemacs скачает и поставит всё что нужно.
 
 </body>
 </html>

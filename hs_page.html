@@ -53,6 +53,8 @@
 Как текстовый редактор можно поставить [http://mirror.tochlab.net/pub/gnu/emacs/windows/emacs-27](emacs)
 с расширением spacemacs.
 
+
+
 ### spacemacs на шindows
 
 После установки emacs, делаем бекап папки `C:/Users/*username*/AppData/Roaming/.emacs.d`
@@ -63,6 +65,7 @@
 
 ```
 git clone https://github.com/syl20bnr/spacemacs .emacs.d
+
 ```
 
 ![https://simpletutorials.com/c/spacemacs/mqt72al0/static/5.png](клонируем spacemacs git-ом)
@@ -73,6 +76,7 @@ Win + R
 
 ```
 runemacs --insecure
+
 ```
 
 Затем, нужно выбрать раскладку (vim или emacs) и полную, либо облегчённую версию spacemacs.
@@ -88,9 +92,30 @@ Spacemacs скачает и поставит всё что нужно.
 
 - Закрыть emacs `C-x C-c`
 
-- Тему можно поменять с помощью `M-x load-theme`.
+- Новую тему можно скачать и посмотреть с помощью `M-x load-theme`.
+
+Чтобы установить тему по умолчанию нужно в файле `C:\Users\*user*\AppData\Roaming\.spacemacs`
+на первом месте в списке тем, нужно поставить свою на первое место
+
+```
+dotspacemacs-themes '(spacemacs-light
+                      spacemacs-dark)
+
+```
 
 
+Чтобы включить нумерацию строк по умолчанию, в том же
+`C:\Users\*user*\AppData\Roaming\.spacemacs`
+в тело функции `(defun dotspacemacs/user-config ()`
+нужно добавить привязку команды `linum-mode` к расширениям
+файлов с кодом
+
+```
+(defun dotspacemacs/user-config ()
+       (spacemacs/add-to-hooks 'linum-mode '(c-mode-hook c++-mode-hook haskell-mode-hook))
+)
+
+```
 
 </body>
 </html>

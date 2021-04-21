@@ -50,74 +50,41 @@
 или повводить выражения `33+3*3`, `"ABC"++"DEFG"`.
 
 
-Как текстовый редактор можно поставить [http://mirror.tochlab.net/pub/gnu/emacs/windows/emacs-27](emacs)
-с расширением spacemacs.
+Как текстовый редактор на шindows доступны [https://notepad-plus-plus.org/downloads/](notepad++) если не хочется страдать, [http://mirror.tochlab.net/pub/gnu/emacs/windows/emacs-27](emacs)
+с расширением [hs_spacemacs.html](spacemacs).
 
-
-
-### spacemacs на шindows
-
-После установки emacs, делаем бекап папки `C:/Users/*username*/AppData/Roaming/.emacs.d`
-
-![https://simpletutorials.com/c/spacemacs/mqt72al0/static/4.png](переименовали в .emacs.d.old)
-
-И [https://git-scm.com/download/win](git)-ом клонируем всё необходимое
+- в случае с notepad++ можно нажав `F5`, можно привязять к горячим клавишам (сохранить) комманду
 
 ```
-git clone https://github.com/syl20bnr/spacemacs .emacs.d
+cmd /k cd /d $(CURRENT_DIRECTORY) && ghc -o a $(FULL_CURRENT_PATH) && $(CURRENT_DIRECTORY)/a && exit
 
 ```
 
-![https://simpletutorials.com/c/spacemacs/mqt72al0/static/5.png](клонируем spacemacs git-ом)
+которая позволит без труда строить и запускать скрипт.
 
-У emacs на windows проблемы с https, поэтому для обновлений его нужно запустить так:
 
-Win + R
-
-```
-runemacs --insecure
+## Hello, world
 
 ```
+module Main where -- все программы начинают исполняться с действия main из модуля Main
 
-Затем, нужно выбрать раскладку (vim или emacs) и полную, либо облегчённую версию spacemacs.
-Spacemacs скачает и поставит всё что нужно.
+import System.Environment -- внутри модуля можно подключать ещё модули (этот нужен для работы с консолью)
 
-- Открыть новый/существующий файл можно через `C-x C-f`
+main :: IO () -- через символ :: указан тип переменной.
+-- тип IO () значит, что main -- это действие (монада) ввода-вывода, которая возвращает пустоту
 
-- Сохранить текущий файл можно через `C-x C-s`
-
-- Закрыть текущий файл(буффер) `C-x k`
-
-- Отменить `C-x u`
-
-- Закрыть emacs `C-x C-c`
-
-- Новую тему можно скачать и посмотреть с помощью `M-x load-theme`.
-
-Чтобы установить тему по умолчанию нужно в файле `C:\Users\*user*\AppData\Roaming\.spacemacs`
-на первом месте в списке тем, поставить свою на первое место
-
-```
-dotspacemacs-themes '(spacemacs-light
-                      spacemacs-dark)
+main = do -- так начинается список действий, который сам по себе тоже действие
+    putStrLn "Hallo, world!" -- первое наше действие это то, что вернёт функция putStrLn в обмен на строку ( она вернёт IO (), если что )
+    
+    putStrLn "\nPress ENTER to exit process ..."
+    line <- getLine -- оператор <- забирает данные ( которые String ) из действия getLine ( это IO String, если что ), кладёт их в line, а потом скадывает в список действий уже пустое действие IO ()
+    return () -- функция return создаёт любое действие (монаду), которую от неё потребуют ( тут потребовали IO (), чтобы положить в список действий )
 
 ```
 
+Монадный тип `IO` тут по сути выступает как контейнер для перевозки всякой фигни из консоли в локальную переменную
+и для подтверждения, что консоль приняла всякую фигню от нас.
 
-Чтобы включить нумерацию строк по умолчанию, в том же
-`C:\Users\*user*\AppData\Roaming\.spacemacs`
-в тело функции `(defun dotspacemacs/user-config ()`
-нужно добавить привязку команды `linum-mode` к расширениям
-файлов с кодом
-
-```
-(defun dotspacemacs/user-config ()
-       (spacemacs/add-to-hooks 'linum-mode '(c-mode-hook c++-mode-hook haskell-mode-hook))
-)
-
-```
-
-Если был выбран evil mode, то на этот счёт есть [https://simpletutorials.com/c/spacemacs/s2sgz96z/how-to-close-the-spacemacs-install-log-window](гайд по интерфейсу).
 
 
 ## Hello, sceheme за 48 часов!

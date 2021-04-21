@@ -213,14 +213,18 @@ parseString = do
 
 
 parseAtom :: Parser LispVal
-parseAtom = do
-    first <- letter <|> symbol
-    rest <- many (letter <|> digit <|> symbol)
-    let atom = first : rest
-    return $ case atom of
+parseAtom = do                   -- оператор выбора парсера <|> определён в Parsec и значит, что результат будет взят у первого сработавшего парсера
+    first <- letter <|> symbol                 -- вначале это либо буква, либо символ
+    rest <- many (letter <|> digit <|> symbol) -- оставшаяся часть это список из букв, цифр и символов
+    let atom = first : rest                    -- оператор : это конструктор списка. Он берёт эллемент и список, а возвращает новый список, начинающийся с заданного эллемента.
+    return $ case atom of        -- снова сконструировали и упаковали
                "#t" -> Bool True
                "#f" -> Bool False
                 _   -> Atom atom
+
+
+parseNumber :: Parser LispVal
+parseNumber = liftM (Number . read) $ many1 digit
 
 ```
 

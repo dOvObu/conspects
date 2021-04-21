@@ -129,8 +129,8 @@ data MyAlgType type1 type2 = Constructor1 type1
 
 -- вот сконструировали переменную моего алгебраического типа
 myVariable :: MyAlgType Int String
-myVariable = Constructor2 "Oh, hi!"
--- myVariable = Constructor1 42
+myVariable = Constructor2 "Oh, hi!"  -- могли бы ещё сконструировать так Constructor1 42
+
 
 -- стрелка значит, что это функция
 myAlgTypeToString :: MyAlgType Int String -> String

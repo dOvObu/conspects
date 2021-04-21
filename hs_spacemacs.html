@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+<script src="dist/asciimath2tex.umd.js"></script>
+<script src='dist/md_asciimath_like.js'></script>
+<link rel="stylesheet" href="dist/style.css">
+
+	
+<title>spacemacs на windows</title>
+</head>
+<body>
+
+
+[NAVBAR Главная :: index.html, Haskell :: hs_page.html]
+
+# Spacemacs на шindows
+
+![https://www.spacemacs.org/img/logo.svg](spacemacs logo)
+
+После установки emacs, делаем бекап папки `C:/Users/*username*/AppData/Roaming/.emacs.d`
+
+![https://simpletutorials.com/c/spacemacs/mqt72al0/static/4.png](переименовали в .emacs.d.old)
+
+И [https://git-scm.com/download/win](git)-ом клонируем всё необходимое
+
+```
+git clone https://github.com/syl20bnr/spacemacs .emacs.d
+
+```
+
+![https://simpletutorials.com/c/spacemacs/mqt72al0/static/5.png](клонируем spacemacs git-ом)
+
+У emacs на шindows проблемы с https, поэтому для обновлений его советуют запустить так:
+
+Win + R
+
+```
+runemacs --insecure
+
+```
+
+Затем, нужно выбрать раскладку (vim или emacs) и полную, либо облегчённую версию spacemacs.
+Spacemacs скачает и поставит всё что нужно.
+
+- Открыть новый/существующий файл можно через `C-x C-f`
+
+- Сохранить текущий файл можно через `C-x C-s`
+
+- Закрыть текущий файл(буффер) `C-x k`
+
+- Отменить `C-x u`
+
+- Закрыть emacs `C-x C-c`
+
+- Новую тему можно скачать и посмотреть с помощью `M-x load-theme`.
+
+
+Чтобы установить тему по умолчанию нужно в файле `C:\Users\*user*\AppData\Roaming\.spacemacs`
+на первом месте в списке тем, поставить свою на первое место
+
+```
+dotspacemacs-themes '(spacemacs-light
+                      spacemacs-dark)
+
+```
+
+
+Чтобы включить нумерацию строк по умолчанию, в том же
+`C:\Users\*user*\AppData\Roaming\.spacemacs`
+в тело функции `(defun dotspacemacs/user-config ()`
+нужно добавить привязку команды `linum-mode` к расширениям
+файлов с кодом
+
+```
+(defun dotspacemacs/user-config ()
+       (spacemacs/add-to-hooks 'linum-mode '(c-mode-hook c++-mode-hook haskell-mode-hook))
+)
+
+```
+
+Если был выбран evil mode, то на этот счёт есть [https://simpletutorials.com/c/spacemacs/s2sgz96z/how-to-close-the-spacemacs-install-log-window](гайд по интерфейсу).
+
+
+[hs_page.html](Назад)
+
+</body>
+</html>

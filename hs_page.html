@@ -166,8 +166,9 @@ readExpr input = case parse   symbol      "lisp"           input    of
 ```
 
 Теперь спрячем в подключённой библиотеке функцию `spaces`,
-потому что хотим потребовать хотя бы один whitespace символ,
-и перепишем сами, используя функцию [http://hackage.haskell.org/package/base-4.7.0.1/docs/Text-ParserCombinators-ReadP.html#v:skipMany1](skipMany1)
+потому что хотим потребовать хотя бы один whitespace символ.
+
+Мы напишем свой `spaces`, используя функцию [http://hackage.haskell.org/package/base-4.7.0.1/docs/Text-ParserCombinators-ReadP.html#v:skipMany1](skipMany1)
 и действие [https://hackage.haskell.org/package/parsec-3.1.14.0/docs/Text-Parsec-Char.html#v:space](space).
 
 ```

@@ -19,7 +19,7 @@
 			
 			.replaceAll(        /\ndef ([^=\n]+)=\s*([^\n]+)/g,
 				function (foundString, question, answer) {
-					aa[idx++] = answer;
+					aa[idx++] = answer.replaceAll("<br>", " ");
 					return foundString;
 				}
 			)

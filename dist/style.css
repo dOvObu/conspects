@@ -2,7 +2,7 @@ body {
 
 	background-color: #FFFFEA;
 	background: linear-gradient(to right, black 20%, white 20% 80%, black 80%);
-	font-family: 'Trebuchet MS';
+	font-family: UnderstoodSans,Arial,Helvetica,sans-serif; /*'Trebuchet MS';/**/
 	
 	margin: auto;
 	width: 45%;
